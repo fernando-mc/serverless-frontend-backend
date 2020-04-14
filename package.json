@@ -1,0 +1,10 @@
+{
+  "name": "demo-serverless",
+  "version": "1.0.0",
+  "scripts": {
+    "postinstall": "serverless client deploy --no-confirm"
+  },
+  "dependencies": {
+    "serverless-finch": "^2.5.2"
+  }
+}
