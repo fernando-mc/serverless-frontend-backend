@@ -7,7 +7,7 @@ def hello(event, context):
     response = {
         "statusCode": 200,
         "body": json.dumps({
-            "message": "Hello all friends!"
+            "message": "Hello all friends v2!"
         })
     }
     return response
