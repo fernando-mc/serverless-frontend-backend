@@ -1,0 +1,22 @@
+org: fernando
+app: frontend-backend
+service: frontend-backend
+
+provider:
+  name: aws
+  runtime: python3.8
+  
+functions:
+  getProfileInfo:
+    handler: handler.hello
+    events:
+      - httpApi:
+            method: GET
+            path: /hello
+
+plugins:
+  - serverless-finch
+
+custom:
+  client:
+    bucketName: sls-fernando-test-bucket-bkfrnt
